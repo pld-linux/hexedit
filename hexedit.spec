@@ -1,4 +1,4 @@
-Summary:	Binary file editor based on ncurses.
+Summary:	Binary file editor based on ncurses
 Summary(fr):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
 Summary(pl):	Edytor plików binarnych oparty na bibliotece ncurses
 Summary(pt_BR):	O hexedit é um editor hexadecimal de arquivos em modo texo
