@@ -1,0 +1,15 @@
+diff -Nru hexedit/Makefile.in hexedit.new/Makefile.in
+--- hexedit/Makefile.in	Wed Feb 17 15:22:57 1999
++++ hexedit.new/Makefile.in	Tue Jul 25 17:11:31 2000
+@@ -39,7 +39,7 @@
+ 	rm -f Makefile config.cache config.status config.log
+ 
+ install: $(PRODUCT)
+-	$(INSTALL) -d -m 755 $(bindir)
+-	$(INSTALL) -s -m 755 $(PRODUCT) $(bindir)
+-	$(INSTALL) -d -m 755 $(mandir)
+-	$(INSTALL) -m 644 $(PRODUCT).1 $(mandir)
++	$(INSTALL) -d -m 755 $(DESTDIR)$(bindir)
++	$(INSTALL) -m 755 $(PRODUCT) $(DESTDIR)$(bindir)
++	$(INSTALL) -d -m 755 $(DESTDIR)$(mandir)
++	$(INSTALL) -m 644 $(PRODUCT).1 $(DESTDIR)$(mandir)
