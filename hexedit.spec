@@ -1,15 +1,16 @@
 Summary:	Binary file editor based on ncurses.
 Summary(fr):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
-Summary(pl):	Edytor plikow binarnych oparty na bibliotece ncurses
+Summary(pl):	Edytor plików binarnych oparty na bibliotece ncurses
 Name:		hexedit
 Version:	1.1.0
 Release:	1
 License:	GPL
 Group:		Applications/Editors
-Group(pt):	X11/Aplicações/Editores
+Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
+Group(pt):	Aplicações/Editores
 Source0:	http://www.chez.com/prigaux/%{name}-%{version}.src.tgz
-Patch0:		hexedit-DESTDIR.patch
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.chez.com/prigaux/hexedit.html
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,7 +21,7 @@ a device as the file is read a piece at a time. You can modify the
 file and search through it.
 
 %description -l pl
-przegl±danie i edycja plików w formacie hexadecymalnym lub w ASCII.
+Przegl±danie i edycja plików w formacie hexadecymalnym lub w ASCII.
 hexedit pokazuje plik w zarówno w postaci ASCII jak i hexadecymalnej.
 Mo¿esz przeszukiwaæ modyfikowany plik. The file can be a device as the
 file is not whole read.
@@ -35,9 +36,7 @@ morceau. Possibilité de modifier le fichier et de faire une recherche.
 %patch -p1
 
 %build
-LDFLAGS="-s"
-CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
-export LDFLAGS CFLAGS
+CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %configure
 %{__make}
 
@@ -47,15 +46,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes TODO *.lsm \
-	$RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf Changes TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)
-
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %doc *.gz
