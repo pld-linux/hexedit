@@ -7,9 +7,6 @@ Version:	1.2.2
 Release:	2
 License:	GPL
 Group:		Applications/Editors
-Group(de):	Applikationen/Editors
-Group(pl):	Aplikacje/Edytory
-Group(pt):	Aplicações/Editores
 Source0:	http://merd.net/pixel/%{name}-%{version}.src.tgz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.chez.com/prigaux/hexedit.html
