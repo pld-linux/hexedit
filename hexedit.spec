@@ -2,7 +2,7 @@ Summary:	Binary file editor based on ncurses.
 Summary(pl):	Edytor plikow binarnych oparty na bibliotece ncurses
 Name:		hexedit
 Version:	0.9.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors
 Group(pt):	X11/Aplicações/Editores
