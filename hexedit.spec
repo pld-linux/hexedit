@@ -42,7 +42,7 @@ Pode-se modificar o arquivo e procurar padrões em seu conteúdo.
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 %{__make}
