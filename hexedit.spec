@@ -8,6 +8,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://merd.net/pixel/%{name}-%{version}.src.tgz
+# Source0-md5:	99fcf36bf539a34e47c496b667b1f795
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.chez.com/prigaux/hexedit.html
 BuildRequires:	autoconf
