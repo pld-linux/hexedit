@@ -5,7 +5,7 @@ Summary(pt_BR):	O hexedit é um editor hexadecimal de arquivos em modo texo
 Name:		hexedit
 Version:	1.2.10
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Editors
 Source0:	http://merd.net/pixel/%{name}-%{version}.src.tgz
 # Source0-md5:	5d925ab9f0746ccd1d05c80fef628938
