@@ -3,7 +3,7 @@ Summary(fr):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
 Summary(pl):	Edytor plików binarnych oparty na bibliotece ncurses
 Name:		hexedit
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
@@ -37,6 +37,8 @@ morceau. Possibilité de modifier le fichier et de faire une recherche.
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
+aclocal
+autoconf
 %configure
 %{__make}
 
