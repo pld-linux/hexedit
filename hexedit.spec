@@ -1,38 +1,51 @@
 Summary:	Binary file editor based on ncurses.
+Summary(fr):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
 Summary(pl):	Edytor plikow binarnych oparty na bibliotece ncurses
 Name:		hexedit
-Version:	0.9.4
-Release:	3
+Version:	1.1.0
+Release:	1
 License:	GPL
 Group:		Applications/Editors
 Group(pt):	X11/Aplicações/Editores
 Group(pl):	Aplikacje/Edytory
-Source0:	http://www.chez.com/prigaux/%{name}-%{version}.tar.gz
-URL:		http://www.chez.com/prigaux/
+Source0:	http://www.chez.com/prigaux/%{name}-%{version}.src.tgz
+Patch0:		hexedit-DESTDIR.patch
+URL:		http://www.chez.com/prigaux/hexedit.html
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
-View and edit files in hexdecimal or ASCII mode.
+hexedit shows a file both in ASCII and in hexadecimal. The file can be
+a device as the file is read a piece at a time. You can modify the
+file and search through it.
 
 %description -l pl
-Przegl±danie i edycja plików w trybie hexdecymalnym lub ASCII.
+przegl±danie i edycja plików w formacie hexadecymalnym lub w ASCII.
+hexedit pokazuje plik w zarówno w postaci ASCII jak i hexadecymalnej.
+Mo¿esz przeszukiwaæ modyfikowany plik. The file can be a device as the
+file is not whole read.
+
+%description -l fr
+hexedit montre le fichier à la fois en ASCII et en hexadécimal. Le
+fichier peut être un device vu que le fichier est lu par petit
+morceau. Possibilité de modifier le fichier et de faire une recherche.
 
 %prep
-%setup -q
+%setup -q -n %{name}
+%patch -p1
 
 %build
-make	CFLAGS="$RPM_OPT_FLAGS -I%{_includedir}/ncurses" \
-	LOADLIBES="-lncurses"
+LDFLAGS="-s"
+CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
+export LDFLAGS CFLAGS
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install -s %{name} $RPM_BUILD_ROOT%{_bindir}
-
-install hexedit.1 $RPM_BUILD_ROOT%{_mandir}/man1
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf Changes TODO *.lsm \
 	$RPM_BUILD_ROOT%{_mandir}/man1/*
