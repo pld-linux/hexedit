@@ -3,12 +3,12 @@ Summary(fr):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
 Summary(pl):	Edytor plików binarnych oparty na bibliotece ncurses
 Summary(pt_BR):	O hexedit é um editor hexadecimal de arquivos em modo texo
 Name:		hexedit
-Version:	1.2.2
-Release:	3
+Version:	1.2.10
+Release:	1
 License:	GPL
 Group:		Applications/Editors
 Source0:	http://merd.net/pixel/%{name}-%{version}.src.tgz
-# Source0-md5:	99fcf36bf539a34e47c496b667b1f795
+# Source0-md5:	5d925ab9f0746ccd1d05c80fef628938
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.chez.com/prigaux/hexedit.html
 BuildRequires:	autoconf
