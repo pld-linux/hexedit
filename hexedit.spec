@@ -5,6 +5,7 @@ Version:	0.9.4
 Release:	1
 License:	GPL
 Group:		Applications/Editors
+Group(pt):	X11/Aplicações/Editores
 Group(pl):	Aplikacje/Edytory
 Source0:	http://www.chez.com/prigaux/%{name}-%{version}.tar.gz
 URL:		http://www.chez.com/prigaux/
