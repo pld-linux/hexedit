@@ -12,6 +12,8 @@ Group(pt):	Aplicações/Editores
 Source0:	http://www.chez.com/prigaux/%{name}-%{version}.src.tgz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.chez.com/prigaux/hexedit.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
