@@ -29,8 +29,7 @@ morceau. Possibilité de modifier le fichier et de faire une recherche.
 %description -l pl
 Przegl±danie i edycja plików w formacie hexadecymalnym lub w ASCII.
 hexedit pokazuje plik w zarówno w postaci ASCII jak i hexadecymalnej.
-Mo¿esz przeszukiwaæ modyfikowany plik. The file can be a device as the
-file is not whole read.
+Mo¿esz przeszukiwaæ modyfikowany plik. 
 
 %description -l pt_BR
 O hexedit mostra um arquivo em ASCII e hexadecimal. O arquivo pode ser
