@@ -38,7 +38,7 @@ Pode-se modificar o arquivo e procurar padrões em seu conteúdo.
 
 %prep
 %setup -q -n %{name}
-%patch -p1
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
