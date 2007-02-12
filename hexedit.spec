@@ -1,7 +1,7 @@
 Summary:	Binary file editor based on ncurses
-Summary(fr):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
-Summary(pl):	Edytor plików binarnych oparty na bibliotece ncurses
-Summary(pt_BR):	O hexedit é um editor hexadecimal de arquivos em modo texo
+Summary(fr.UTF-8):   Visualisation et edition de fichiers en hexadecimal ou en ASCII
+Summary(pl.UTF-8):   Edytor plikÃ³w binarnych oparty na bibliotece ncurses
+Summary(pt_BR.UTF-8):   O hexedit Ã© um editor hexadecimal de arquivos em modo texo
 Name:		hexedit
 Version:	1.2.10
 Release:	1
@@ -21,20 +21,20 @@ hexedit shows a file both in ASCII and in hexadecimal. The file can be
 a device as the file is read a piece at a time. You can modify the
 file and search through it.
 
-%description -l fr
-hexedit montre le fichier à la fois en ASCII et en hexadécimal. Le
-fichier peut être un device vu que le fichier est lu par petit
-morceau. Possibilité de modifier le fichier et de faire une recherche.
+%description -l fr.UTF-8
+hexedit montre le fichier Ã  la fois en ASCII et en hexadÃ©cimal. Le
+fichier peut Ãªtre un device vu que le fichier est lu par petit
+morceau. PossibilitÃ© de modifier le fichier et de faire une recherche.
 
-%description -l pl
-Przegl±danie i edycja plików w formacie hexadecymalnym lub w ASCII.
-hexedit pokazuje plik w zarówno w postaci ASCII jak i hexadecymalnej.
-Mo¿esz przeszukiwaæ modyfikowany plik. 
+%description -l pl.UTF-8
+PrzeglÄ…danie i edycja plikÃ³w w formacie hexadecymalnym lub w ASCII.
+hexedit pokazuje plik w zarÃ³wno w postaci ASCII jak i hexadecymalnej.
+MoÅ¼esz przeszukiwaÄ‡ modyfikowany plik. 
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 O hexedit mostra um arquivo em ASCII e hexadecimal. O arquivo pode ser
-um dispositivo, visto que é lido apenas aquilo que vai ser mostrado.
-Pode-se modificar o arquivo e procurar padrões em seu conteúdo.
+um dispositivo, visto que Ã© lido apenas aquilo que vai ser mostrado.
+Pode-se modificar o arquivo e procurar padrÃµes em seu conteÃºdo.
 
 %prep
 %setup -q -n %{name}
