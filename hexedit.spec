@@ -1,7 +1,7 @@
 Summary:	Binary file editor based on ncurses
-Summary(fr.UTF-8):   Visualisation et edition de fichiers en hexadecimal ou en ASCII
-Summary(pl.UTF-8):   Edytor plików binarnych oparty na bibliotece ncurses
-Summary(pt_BR.UTF-8):   O hexedit é um editor hexadecimal de arquivos em modo texo
+Summary(fr.UTF-8):	Visualisation et edition de fichiers en hexadecimal ou en ASCII
+Summary(pl.UTF-8):	Edytor plików binarnych oparty na bibliotece ncurses
+Summary(pt_BR.UTF-8):	O hexedit é um editor hexadecimal de arquivos em modo texo
 Name:		hexedit
 Version:	1.2.10
 Release:	1
