@@ -44,8 +44,7 @@ Pode-se modificar o arquivo e procurar padrões em seu conteúdo.
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %{__aclocal}
 %{__autoconf}
-%configure \
-	LIBS="-ltinfo"
+%configure
 %{__make}
 
 %install
