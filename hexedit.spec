@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	Edytor plików binarnych oparty na bibliotece ncurses
 Summary(pt_BR.UTF-8):	O hexedit é um editor hexadecimal de arquivos em modo texo
 Name:		hexedit
 Version:	1.2.12
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Applications/Editors
 Source0:	http://merd.net/pixel/%{name}-%{version}.src.tgz
